@@ -19,13 +19,13 @@ namespace TheWorld.Models
 
         public async Task EnsureSeedDataAsync()
         {
-            if (await _userManager.FindByEmailAsync("sam.hastings@theworld.com") == null)
+            if (await _userManager.FindByEmailAsync("villo@theworld.com") == null)
             {
                 //Add the user
                 WorldUser newUser = new WorldUser()
                 {
-                    UserName = "samhastings",
-                    Email = "sam.hastings@theworld.com"
+                    UserName = "villo",
+                    Email = "villo@theworld.com"
                 };
 
                 await _userManager.CreateAsync(newUser, "Trip*wire1");
@@ -38,7 +38,7 @@ namespace TheWorld.Models
                 {
                     Name = "US Trip",
                     Created = DateTime.Now,
-                    UserName = "samhastings",
+                    UserName = "villo",
                     Stops = new List<Stop>()
                     {
                         new Stop() { Name = "Atlanta, GA", Arrival = new DateTime(2014, 6, 4), Latitude = 33.748995, Longitude =-84.387982, Order = 0 },
@@ -57,7 +57,7 @@ namespace TheWorld.Models
                 {
                     Name = "World Trip",
                     Created = DateTime.Now,
-                    UserName = "samhastings",
+                    UserName = "villo",
                     Stops = new List<Stop>()
                     {
                         new Stop() { Order = 0, Latitude =  33.748995, Longitude =  -84.387982, Name = "Atlanta, Georgia", Arrival = DateTime.Parse("Jun 3, 2014") },
