@@ -235,3 +235,4 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 /src/TheWorld/wwwroot/lib/font-awesome/.gitignore
+/src/TheWorld/wwwroot/lib/gmaps/.gitignore
