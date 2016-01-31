@@ -19,6 +19,8 @@
     //    alert(me.text());
     //});
 
+    var foo = "bar";
+
     var $sidebarAndWrapper = $("#sidebar,#wrapper");
     var $icon = $("#sidebarToggle i.fa");
 
